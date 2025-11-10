@@ -4,6 +4,8 @@ import { HomePage } from './pages/HomePage';
 import { LoginPage } from './pages/auth/LoginPage';
 import { RegisterPage } from './pages/auth/RegisterPage';
 import { DashboardPage } from './pages/dashboard/DashboardPage';
+import { JobsPage } from './pages/jobs/JobsPage';
+import { EventsPage } from './pages/events/EventsPage';
 
 // Protected Route Component
 const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
@@ -74,6 +76,12 @@ function AppRoutes() {
           </ProtectedRoute>
         }
       />
+
+      {/* Jobs Routes */}
+      <Route path="/jobs" element={<JobsPage />} />
+
+      {/* Events Routes */}
+      <Route path="/events" element={<EventsPage />} />
 
       {/* Catch all - redirect to home */}
       <Route path="*" element={<Navigate to="/" replace />} />

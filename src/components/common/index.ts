@@ -17,3 +17,7 @@ export { Badge } from './Badge';
 export type { BadgeVariant } from './Badge';
 
 export { EmptyState } from './EmptyState';
+
+export { Pagination } from './Pagination';
+
+export { Toast, ToastContainer } from './Toast';
